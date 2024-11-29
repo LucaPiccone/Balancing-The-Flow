@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 278: 'stop' is not a keyword argument or valid child of the screen statement.
+    stop music fadeout 3.0
+        ^
+
+Ren'Py Version: Ren'Py 8.3.2.24090902
+Mon Nov 25 23:58:22 2024
