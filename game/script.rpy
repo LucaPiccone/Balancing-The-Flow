@@ -1067,6 +1067,7 @@ label tn_room:
     p "After gathering all the evidence, it's time to present my decision."
     p "The town hall is buzzing with discussions from all sides."
     np "Welcome to the council meeting. Today, we will vote on whether to construct The Great Ontartio Dam. Your voices will help determine the future of our community and the environment."
+    'Do I want to build the dam?'
     call screen voting_buttons
 
 screen voting_buttons:
@@ -1107,7 +1108,8 @@ screen yes_checkquiz:
                 spacing 10  # Space between buttons
                 null height 15
                 text "My Journal" size 30 xalign 0.5 color "#FF5733"
-                textbutton "Check Answers" action [Function(check_answers_yes)] xalign 0.5
+                text "Select supporting arguments." size 30 xalign 0.5
+                textbutton "Present" action [Function(check_answers_yes)] xalign 0.5
                 for entry in journal_entries:
                     hbox:
                         null width 25
@@ -1137,7 +1139,8 @@ screen no_checkquiz:
                 spacing 10  # Space between buttons
                 null height 15
                 text "My Journal" size 30 xalign 0.5 color "#FF5733"
-                textbutton "Check Answers" action [Function(check_answers_yes)] xalign 0.5
+                text "Select supporting arguments." size 30 xalign 0.5
+                textbutton "Present" action [Function(check_answers_yes)] xalign 0.5
                 for entry in journal_entries:
                     hbox:
                         null width 25
@@ -1200,8 +1203,6 @@ label ending_no_win:
     "And agreed with most of my points and evidence."
     "So they decided not to build the dam."
     show pol
-    pol "I had a feeling that letting you into my office was a mistake."
-    pol "I had confidence in you. I believed that you could do this ONE thing for me."
     pol "Now because of you, I need to figure out different ways to meet out climate targets."
     pol "Thanks a lot for that."
     pol "I don't have time for this anymore. Goodbye."
@@ -1226,4 +1227,5 @@ label ending_no_fail:
     jump end
 
 label end:
+    "Thank you for playing."
     return
