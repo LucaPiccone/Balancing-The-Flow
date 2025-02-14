@@ -1,4 +1,5 @@
 # Balancing-the-Flow
-A vision novel game that walks players through the up and down sides of dam construction by integrating a journal system and inventory system on Ren’Py.
+
+A visual novel developed in Ren’Py that guides players through the complexities of dam construction, presenting both its benefits and drawbacks. The game incorporates an interactive journal and inventory system to enhance engagement and decision-making.
 
 Check our itch.io page out here: https://lucapiccone.itch.io/balancing-the-flow
